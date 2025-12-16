@@ -1,0 +1,592 @@
+<!DOCTYPE html>
+<html lang="id">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Sitemap - PT Nexora Digital</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.0/font/bootstrap-icons.css"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+
+    <style>
+      body {
+        font-family: "Poppins", sans-serif;
+      }
+
+      :root {
+        --primary-gradient: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+        --primary-color: #667eea;
+      }
+
+      .navbar {
+        backdrop-filter: blur(10px);
+        background: rgba(255, 255, 255, 0.95) !important;
+      }
+
+      .hero-section {
+        background: var(--primary-gradient);
+        padding: 120px 0 80px;
+        color: white;
+      }
+
+      .content-section {
+        padding: 60px 0;
+      }
+
+      .sitemap-card {
+        background: white;
+        border-radius: 15px;
+        padding: 30px;
+        box-shadow: 0 10px 40px rgba(0, 0, 0, 0.08);
+        margin-bottom: 30px;
+        transition: all 0.3s ease;
+      }
+
+      .sitemap-card:hover {
+        transform: translateY(-5px);
+        box-shadow: 0 15px 50px rgba(102, 126, 234, 0.15);
+      }
+
+      .sitemap-card h4 {
+        color: var(--primary-color);
+        font-weight: 700;
+        margin-bottom: 20px;
+        display: flex;
+        align-items: center;
+        gap: 10px;
+      }
+
+      .sitemap-card ul {
+        list-style: none;
+        padding: 0;
+      }
+
+      .sitemap-card ul li {
+        padding: 10px 0;
+        border-bottom: 1px solid #f0f0f0;
+      }
+
+      .sitemap-card ul li:last-child {
+        border-bottom: none;
+      }
+
+      .sitemap-card ul li a {
+        color: #6c757d;
+        text-decoration: none;
+        display: flex;
+        align-items: center;
+        gap: 10px;
+        transition: all 0.3s;
+      }
+
+      .sitemap-card ul li a:hover {
+        color: var(--primary-color);
+        padding-left: 10px;
+      }
+
+      .sitemap-card ul li a i {
+        font-size: 1.1rem;
+      }
+
+      footer {
+        background: linear-gradient(135deg, #1a1a2e 0%, #16213e 100%);
+        color: rgba(255, 255, 255, 0.8);
+        padding: 30px 0;
+      }
+
+      .search-box {
+        max-width: 600px;
+        margin: 0 auto 40px;
+      }
+
+      .search-box input {
+        border-radius: 50px;
+        padding: 15px 25px;
+        border: 2px solid #e9ecef;
+      }
+
+      .search-box input:focus {
+        border-color: var(--primary-color);
+        box-shadow: 0 0 0 0.2rem rgba(102, 126, 234, 0.25);
+      }
+    </style>
+  </head>
+  <body>
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-light shadow-sm sticky-top">
+      <div class="container">
+        <a
+          class="navbar-brand fw-bold fs-3 d-flex align-items-center gap-2"
+          href="index.html"
+        >
+          <i class="bi bi-hexagon-fill text-primary fs-2"></i>
+          <span class="text-primary">Nexora</span>
+          <span class="text-secondary fs-5">Digital</span>
+        </a>
+        <button
+          class="navbar-toggler border-0"
+          data-bs-toggle="collapse"
+          data-bs-target="#nav"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="nav">
+          <ul class="navbar-nav ms-auto fw-semibold">
+            <li class="nav-item">
+              <a class="nav-link text-dark" href="../index.html">Beranda</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link text-dark" href="about.html">Tentang</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link text-dark" href="index.html#services"
+                >Layanan</a
+              >
+            </li>
+            <li class="nav-item">
+              <a class="nav-link text-dark" href="index.html#contact">Kontak</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <!-- Hero -->
+    <section class="hero-section text-center">
+      <div class="container">
+        <i class="bi bi-diagram-3 display-1 mb-4"></i>
+        <h1 class="display-4 fw-bold mb-3">Sitemap</h1>
+        <p class="lead">Navigasi lengkap website PT Nexora Digital</p>
+      </div>
+    </section>
+
+    <!-- Content -->
+    <section class="content-section">
+      <div class="container">
+        <!-- Search Box -->
+        <div class="search-box">
+          <div class="input-group">
+            <input
+              type="text"
+              class="form-control form-control-lg"
+              id="sitemapSearch"
+              placeholder="Cari halaman..."
+            />
+            <button class="btn btn-primary px-4" type="button">
+              <i class="bi bi-search"></i>
+            </button>
+          </div>
+        </div>
+
+        <div class="row g-4">
+          <!-- Main Pages -->
+          <div class="col-lg-4 col-md-6">
+            <div class="sitemap-card">
+              <h4>
+                <i class="bi bi-house-door"></i>
+                Halaman Utama
+              </h4>
+              <ul>
+                <li>
+                  <a href="index.html"
+                    ><i class="bi bi-chevron-right"></i>Beranda</a
+                  >
+                </li>
+                <li>
+                  <a href="about.html"
+                    ><i class="bi bi-chevron-right"></i>Tentang Kami</a
+                  >
+                </li>
+                <li>
+                  <a href="index.html#services"
+                    ><i class="bi bi-chevron-right"></i>Layanan</a
+                  >
+                </li>
+                <li>
+                  <a href="index.html#portfolio"
+                    ><i class="bi bi-chevron-right"></i>Portfolio</a
+                  >
+                </li>
+                <li>
+                  <a href="index.html#contact"
+                    ><i class="bi bi-chevron-right"></i>Kontak</a
+                  >
+                </li>
+              </ul>
+            </div>
+          </div>
+
+          <!-- Services -->
+          <div class="col-lg-4 col-md-6">
+            <div class="sitemap-card">
+              <h4>
+                <i class="bi bi-gear"></i>
+                Layanan IT
+              </h4>
+              <ul>
+                <li>
+                  <a href="services/web-development.html"
+                    ><i class="bi bi-chevron-right"></i>Web Development</a
+                  >
+                </li>
+                <li>
+                  <a href="services/mobile-apps.html"
+                    ><i class="bi bi-chevron-right"></i>Mobile Apps</a
+                  >
+                </li>
+                <li>
+                  <a href="services/cloud-services.html"
+                    ><i class="bi bi-chevron-right"></i>Cloud Services</a
+                  >
+                </li>
+                <li>
+                  <a href="services/it-security.html"
+                    ><i class="bi bi-chevron-right"></i>IT Security</a
+                  >
+                </li>
+                <li>
+                  <a href="services/it-consulting.html"
+                    ><i class="bi bi-chevron-right"></i>IT Consulting</a
+                  >
+                </li>
+                <li>
+                  <a href="services/maintenance.html"
+                    ><i class="bi bi-chevron-right"></i>Maintenance & Support</a
+                  >
+                </li>
+              </ul>
+            </div>
+          </div>
+
+          <!-- Company Info -->
+          <div class="col-lg-4 col-md-6">
+            <div class="sitemap-card">
+              <h4>
+                <i class="bi bi-building"></i>
+                Tentang Perusahaan
+              </h4>
+              <ul>
+                <li>
+                  <a href="about.html#vision"
+                    ><i class="bi bi-chevron-right"></i>Visi & Misi</a
+                  >
+                </li>
+                <li>
+                  <a href="about.html#values"
+                    ><i class="bi bi-chevron-right"></i>Nilai Perusahaan</a
+                  >
+                </li>
+                <li>
+                  <a href="about.html#team"
+                    ><i class="bi bi-chevron-right"></i>Tim Kami</a
+                  >
+                </li>
+                <li>
+                  <a href="careers.html"
+                    ><i class="bi bi-chevron-right"></i>Karir</a
+                  >
+                </li>
+                <li>
+                  <a href="partners.html"
+                    ><i class="bi bi-chevron-right"></i>Partner</a
+                  >
+                </li>
+              </ul>
+            </div>
+          </div>
+
+          <!-- Resources -->
+          <div class="col-lg-4 col-md-6">
+            <div class="sitemap-card">
+              <h4>
+                <i class="bi bi-journal-text"></i>
+                Sumber Daya
+              </h4>
+              <ul>
+                <li>
+                  <a href="blog.html"
+                    ><i class="bi bi-chevron-right"></i>Blog & Artikel</a
+                  >
+                </li>
+                <li>
+                  <a href="case-studies.html"
+                    ><i class="bi bi-chevron-right"></i>Case Studies</a
+                  >
+                </li>
+                <li>
+                  <a href="whitepapers.html"
+                    ><i class="bi bi-chevron-right"></i>Whitepapers</a
+                  >
+                </li>
+                <li>
+                  <a href="faq.html"><i class="bi bi-chevron-right"></i>FAQ</a>
+                </li>
+                <li>
+                  <a href="documentation.html"
+                    ><i class="bi bi-chevron-right"></i>Dokumentasi</a
+                  >
+                </li>
+              </ul>
+            </div>
+          </div>
+
+          <!-- Solutions -->
+          <div class="col-lg-4 col-md-6">
+            <div class="sitemap-card">
+              <h4>
+                <i class="bi bi-lightbulb"></i>
+                Solusi Industri
+              </h4>
+              <ul>
+                <li>
+                  <a href="solutions/retail.html"
+                    ><i class="bi bi-chevron-right"></i>Retail & E-Commerce</a
+                  >
+                </li>
+                <li>
+                  <a href="solutions/finance.html"
+                    ><i class="bi bi-chevron-right"></i>Perbankan & Keuangan</a
+                  >
+                </li>
+                <li>
+                  <a href="solutions/healthcare.html"
+                    ><i class="bi bi-chevron-right"></i>Kesehatan</a
+                  >
+                </li>
+                <li>
+                  <a href="solutions/education.html"
+                    ><i class="bi bi-chevron-right"></i>Pendidikan</a
+                  >
+                </li>
+                <li>
+                  <a href="solutions/manufacturing.html"
+                    ><i class="bi bi-chevron-right"></i>Manufaktur</a
+                  >
+                </li>
+              </ul>
+            </div>
+          </div>
+
+          <!-- Legal -->
+          <div class="col-lg-4 col-md-6">
+            <div class="sitemap-card">
+              <h4>
+                <i class="bi bi-file-text"></i>
+                Legal & Kebijakan
+              </h4>
+              <ul>
+                <li>
+                  <a href="privacy-policy.html"
+                    ><i class="bi bi-chevron-right"></i>Privacy Policy</a
+                  >
+                </li>
+                <li>
+                  <a href="terms-of-service.html"
+                    ><i class="bi bi-chevron-right"></i>Terms of Service</a
+                  >
+                </li>
+                <li>
+                  <a href="cookie-policy.html"
+                    ><i class="bi bi-chevron-right"></i>Cookie Policy</a
+                  >
+                </li>
+                <li>
+                  <a href="disclaimer.html"
+                    ><i class="bi bi-chevron-right"></i>Disclaimer</a
+                  >
+                </li>
+                <li>
+                  <a href="sla.html"
+                    ><i class="bi bi-chevron-right"></i>Service Level
+                    Agreement</a
+                  >
+                </li>
+              </ul>
+            </div>
+          </div>
+
+          <!-- Support -->
+          <div class="col-lg-4 col-md-6">
+            <div class="sitemap-card">
+              <h4>
+                <i class="bi bi-headset"></i>
+                Dukungan
+              </h4>
+              <ul>
+                <li>
+                  <a href="support.html"
+                    ><i class="bi bi-chevron-right"></i>Pusat Bantuan</a
+                  >
+                </li>
+                <li>
+                  <a href="contact.html"
+                    ><i class="bi bi-chevron-right"></i>Hubungi Kami</a
+                  >
+                </li>
+                <li>
+                  <a href="request-quote.html"
+                    ><i class="bi bi-chevron-right"></i>Request Quote</a
+                  >
+                </li>
+                <li>
+                  <a href="ticket.html"
+                    ><i class="bi bi-chevron-right"></i>Submit Ticket</a
+                  >
+                </li>
+                <li>
+                  <a href="client-portal.html"
+                    ><i class="bi bi-chevron-right"></i>Client Portal</a
+                  >
+                </li>
+              </ul>
+            </div>
+          </div>
+
+          <!-- Social Media -->
+          <div class="col-lg-4 col-md-6">
+            <div class="sitemap-card">
+              <h4>
+                <i class="bi bi-share"></i>
+                Media Sosial
+              </h4>
+              <ul>
+                <li>
+                  <a
+                    href="https://linkedin.com/company/nexoradigital"
+                    target="_blank"
+                    ><i class="bi bi-linkedin"></i>LinkedIn</a
+                  >
+                </li>
+                <li>
+                  <a href="https://instagram.com/nexoradigital" target="_blank"
+                    ><i class="bi bi-instagram"></i>Instagram</a
+                  >
+                </li>
+                <li>
+                  <a href="https://facebook.com/nexoradigital" target="_blank"
+                    ><i class="bi bi-facebook"></i>Facebook</a
+                  >
+                </li>
+                <li>
+                  <a href="https://twitter.com/nexoradigital" target="_blank"
+                    ><i class="bi bi-twitter"></i>Twitter</a
+                  >
+                </li>
+                <li>
+                  <a href="https://youtube.com/@nexoradigital" target="_blank"
+                    ><i class="bi bi-youtube"></i>YouTube</a
+                  >
+                </li>
+              </ul>
+            </div>
+          </div>
+
+          <!-- Tools & Downloads -->
+          <div class="col-lg-4 col-md-6">
+            <div class="sitemap-card">
+              <h4>
+                <i class="bi bi-download"></i>
+                Tools & Download
+              </h4>
+              <ul>
+                <li>
+                  <a href="downloads/brochure.pdf"
+                    ><i class="bi bi-chevron-right"></i>Company Brochure</a
+                  >
+                </li>
+                <li>
+                  <a href="downloads/pricing.pdf"
+                    ><i class="bi bi-chevron-right"></i>Price List</a
+                  >
+                </li>
+                <li>
+                  <a href="downloads/portfolio.pdf"
+                    ><i class="bi bi-chevron-right"></i>Portfolio PDF</a
+                  >
+                </li>
+                <li>
+                  <a href="tools/roi-calculator.html"
+                    ><i class="bi bi-chevron-right"></i>ROI Calculator</a
+                  >
+                </li>
+                <li>
+                  <a href="tools/cost-estimator.html"
+                    ><i class="bi bi-chevron-right"></i>Cost Estimator</a
+                  >
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+
+        <!-- XML Sitemap -->
+        <div class="text-center mt-5">
+          <div class="card border-0 shadow-lg mx-auto" style="max-width: 600px">
+            <div class="card-body p-4">
+              <i class="bi bi-filetype-xml display-4 text-primary mb-3"></i>
+              <h5 class="fw-bold mb-3">XML Sitemap untuk Search Engine</h5>
+              <p class="text-muted">
+                Untuk keperluan SEO dan indexing oleh search engine
+              </p>
+              <a href="sitemap.xml" class="btn btn-primary rounded-pill px-4">
+                <i class="bi bi-download me-2"></i>Download XML Sitemap
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="text-center">
+      <div class="container">
+        <p class="mb-2">© 2025 PT Nexora Digital — All Rights Reserved.</p>
+        <p class="mb-0">
+          <i class="bi bi-envelope me-2"></i>info@nexoradigital.com |
+          <i class="bi bi-telephone ms-3 me-2"></i>+62 812-3456-7890
+        </p>
+      </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script>
+      // Simple search functionality
+      document
+        .getElementById("sitemapSearch")
+        .addEventListener("input", function (e) {
+          const searchTerm = e.target.value.toLowerCase();
+          const cards = document.querySelectorAll(".sitemap-card");
+
+          cards.forEach((card) => {
+            const text = card.textContent.toLowerCase();
+            if (text.includes(searchTerm)) {
+              card.style.display = "block";
+              card.parentElement.style.display = "block";
+            } else {
+              card.style.display = "none";
+              card.parentElement.style.display = "none";
+            }
+          });
+
+          // Show all if search is empty
+          if (searchTerm === "") {
+            cards.forEach((card) => {
+              card.style.display = "block";
+              card.parentElement.style.display = "block";
+            });
+          }
+        });
+    </script>
+  </body>
+</html>

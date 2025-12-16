@@ -1,0 +1,562 @@
+<!DOCTYPE html>
+<html lang="id">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Terms of Service - PT Nexora Digital</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.0/font/bootstrap-icons.css"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+
+    <style>
+      body {
+        font-family: "Poppins", sans-serif;
+      }
+
+      :root {
+        --primary-gradient: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+        --primary-color: #667eea;
+      }
+
+      .navbar {
+        backdrop-filter: blur(10px);
+        background: rgba(255, 255, 255, 0.95) !important;
+      }
+
+      .hero-section {
+        background: var(--primary-gradient);
+        padding: 120px 0 80px;
+        color: white;
+      }
+
+      .content-section {
+        padding: 60px 0;
+      }
+
+      .terms-card {
+        background: white;
+        border-radius: 15px;
+        padding: 40px;
+        box-shadow: 0 10px 40px rgba(0, 0, 0, 0.08);
+        margin-bottom: 30px;
+      }
+
+      .terms-card h3 {
+        color: var(--primary-color);
+        font-weight: 700;
+        margin-bottom: 20px;
+      }
+
+      .terms-card h5 {
+        color: #333;
+        font-weight: 600;
+        margin-top: 25px;
+        margin-bottom: 15px;
+      }
+
+      .terms-card ul {
+        padding-left: 25px;
+      }
+
+      .terms-card ul li {
+        margin-bottom: 10px;
+        line-height: 1.8;
+      }
+
+      footer {
+        background: linear-gradient(135deg, #1a1a2e 0%, #16213e 100%);
+        color: rgba(255, 255, 255, 0.8);
+        padding: 30px 0;
+      }
+
+      .toc {
+        background: #f8f9fa;
+        border-radius: 10px;
+        padding: 25px;
+        margin-bottom: 30px;
+        position: sticky;
+        top: 90px;
+      }
+
+      .toc h5 {
+        font-weight: 700;
+        margin-bottom: 15px;
+      }
+
+      .toc ul {
+        list-style: none;
+        padding: 0;
+      }
+
+      .toc ul li {
+        padding: 8px 0;
+      }
+
+      .toc ul li a {
+        color: #6c757d;
+        text-decoration: none;
+        transition: color 0.3s;
+      }
+
+      .toc ul li a:hover {
+        color: var(--primary-color);
+      }
+
+      .last-updated {
+        background: #e7f3ff;
+        border-left: 4px solid var(--primary-color);
+        padding: 15px 20px;
+        border-radius: 5px;
+        margin-bottom: 30px;
+      }
+
+      .alert-warning-custom {
+        background: #fff3cd;
+        border-left: 4px solid #ffc107;
+        padding: 15px 20px;
+        border-radius: 5px;
+        margin: 20px 0;
+      }
+    </style>
+  </head>
+  <body>
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-light shadow-sm sticky-top">
+      <div class="container">
+        <a
+          class="navbar-brand fw-bold fs-3 d-flex align-items-center gap-2"
+          href="index.html"
+        >
+         
+          <span class="text-primary">Nexora</span>
+          <span class="text-secondary fs-5">Digital</span>
+        </a>
+        <button
+          class="navbar-toggler border-0"
+          data-bs-toggle="collapse"
+          data-bs-target="#nav"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="nav">
+          <ul class="navbar-nav ms-auto fw-semibold">
+            <li class="nav-item">
+              <a class="nav-link text-dark" href="../index.html">Beranda</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link text-dark" href="about.html">Tentang</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link text-dark" href="index.html#services"
+                >Layanan</a
+              >
+            </li>
+            <li class="nav-item">
+              <a class="nav-link text-dark" href="index.html#contact">Kontak</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <!-- Hero -->
+    <section class="hero-section text-center">
+      <div class="container">
+        <i class="bi bi-file-text display-1 mb-4"></i>
+        <h1 class="display-4 fw-bold mb-3">Terms of Service</h1>
+        <p class="lead">Syarat dan Ketentuan Layanan PT Nexora Digital</p>
+      </div>
+    </section>
+
+    <!-- Content -->
+    <section class="content-section">
+      <div class="container">
+        <div class="row">
+          <!-- Table of Contents -->
+          <div class="col-lg-3">
+            <div class="toc">
+              <h5><i class="bi bi-list-ul me-2"></i>Daftar Isi</h5>
+              <ul>
+                <li><a href="#acceptance">Penerimaan Syarat</a></li>
+                <li><a href="#services">Layanan</a></li>
+                <li><a href="#user-obligations">Kewajiban Pengguna</a></li>
+                <li><a href="#payment">Pembayaran</a></li>
+                <li>
+                  <a href="#intellectual-property">Hak Kekayaan Intelektual</a>
+                </li>
+                <li><a href="#confidentiality">Kerahasiaan</a></li>
+                <li><a href="#liability">Batasan Tanggung Jawab</a></li>
+                <li><a href="#termination">Pemutusan Layanan</a></li>
+                <li><a href="#disputes">Penyelesaian Sengketa</a></li>
+                <li><a href="#changes">Perubahan Syarat</a></li>
+              </ul>
+            </div>
+          </div>
+
+          <!-- Main Content -->
+          <div class="col-lg-9">
+            <div class="last-updated">
+              <i class="bi bi-calendar-event me-2"></i>
+              <strong>Terakhir diperbarui:</strong> 15 Desember 2025
+            </div>
+
+            <div class="terms-card" id="acceptance">
+              <h3><i class="bi bi-check-circle me-2"></i>Penerimaan Syarat</h3>
+              <p>
+                Dengan mengakses dan menggunakan layanan PT Nexora Digital
+                ("Perusahaan", "kami", "kita"), Anda ("Pengguna", "Klien")
+                menyetujui untuk terikat oleh Syarat dan Ketentuan Layanan ini.
+              </p>
+              <div class="alert-warning-custom">
+                <i class="bi bi-exclamation-triangle me-2"></i>
+                <strong>Penting:</strong> Jika Anda tidak setuju dengan syarat
+                ini, harap tidak menggunakan layanan kami.
+              </div>
+              <p>
+                Syarat ini berlaku untuk semua pengguna layanan, termasuk namun
+                tidak terbatas pada klien, mitra bisnis, dan pengunjung website.
+              </p>
+            </div>
+
+            <div class="terms-card" id="services">
+              <h3><i class="bi bi-tools me-2"></i>Layanan</h3>
+              <p>
+                PT Nexora Digital menyediakan berbagai layanan teknologi
+                informasi, termasuk:
+              </p>
+              <ul>
+                <li>Pengembangan website dan aplikasi</li>
+                <li>Layanan cloud computing dan migrasi</li>
+                <li>Keamanan IT dan audit sistem</li>
+                <li>Konsultasi teknologi</li>
+                <li>Maintenance dan support teknis</li>
+              </ul>
+
+              <h5>Ruang Lingkup Layanan</h5>
+              <p>Spesifikasi detail layanan akan dijelaskan dalam:</p>
+              <ul>
+                <li>Proposal proyek yang disetujui</li>
+                <li>Statement of Work (SoW)</li>
+                <li>Kontrak layanan yang ditandatangani</li>
+              </ul>
+            </div>
+
+            <div class="terms-card" id="user-obligations">
+              <h3><i class="bi bi-person-check me-2"></i>Kewajiban Pengguna</h3>
+              <p>Dengan menggunakan layanan kami, Anda setuju untuk:</p>
+
+              <h5>Penggunaan yang Sah</h5>
+              <ul>
+                <li>
+                  Menggunakan layanan hanya untuk tujuan yang sah dan sesuai
+                  hukum
+                </li>
+                <li>Tidak melanggar hak kekayaan intelektual pihak ketiga</li>
+                <li>
+                  Tidak menggunakan layanan untuk aktivitas ilegal atau
+                  berbahaya
+                </li>
+                <li>Mematuhi semua peraturan dan hukum yang berlaku</li>
+              </ul>
+
+              <h5>Keamanan Akun</h5>
+              <ul>
+                <li>Menjaga kerahasiaan kredensial akun Anda</li>
+                <li>
+                  Bertanggung jawab atas semua aktivitas yang terjadi di akun
+                  Anda
+                </li>
+                <li>
+                  Segera memberitahu kami jika terjadi penggunaan tidak sah
+                </li>
+              </ul>
+
+              <h5>Kerja Sama</h5>
+              <ul>
+                <li>Memberikan informasi yang akurat dan lengkap</li>
+                <li>Menanggapi permintaan informasi dalam waktu yang wajar</li>
+                <li>
+                  Menyediakan akses yang diperlukan untuk pelaksanaan proyek
+                </li>
+              </ul>
+            </div>
+
+            <div class="terms-card" id="payment">
+              <h3>
+                <i class="bi bi-credit-card me-2"></i>Pembayaran dan Penagihan
+              </h3>
+
+              <h5>Ketentuan Pembayaran</h5>
+              <ul>
+                <li>
+                  Pembayaran dilakukan sesuai dengan invoice yang diterbitkan
+                </li>
+                <li>
+                  Jangka waktu pembayaran adalah 14 hari sejak tanggal invoice
+                </li>
+                <li>
+                  Pembayaran dapat dilakukan melalui transfer bank atau metode
+                  yang disepakati
+                </li>
+              </ul>
+
+              <h5>Skema Pembayaran Proyek</h5>
+              <ul>
+                <li><strong>Down Payment:</strong> 30% di awal proyek</li>
+                <li>
+                  <strong>Progress Payment:</strong> 40% saat milestone tercapai
+                </li>
+                <li>
+                  <strong>Final Payment:</strong> 30% setelah penyelesaian dan
+                  approval
+                </li>
+              </ul>
+
+              <h5>Keterlambatan Pembayaran</h5>
+              <p>Keterlambatan pembayaran dapat mengakibatkan:</p>
+              <ul>
+                <li>Denda keterlambatan 2% per bulan</li>
+                <li>Penangguhan layanan atau proyek</li>
+                <li>
+                  Pemutusan kontrak jika pembayaran tertunda lebih dari 30 hari
+                </li>
+              </ul>
+
+              <h5>Refund dan Pembatalan</h5>
+              <p>
+                Kebijakan refund tergantung pada jenis layanan dan tahap proyek.
+                Detail akan dijelaskan dalam kontrak masing-masing proyek.
+              </p>
+            </div>
+
+            <div class="terms-card" id="intellectual-property">
+              <h3>
+                <i class="bi bi-lightbulb me-2"></i>Hak Kekayaan Intelektual
+              </h3>
+
+              <h5>Hak Milik Hasil Kerja</h5>
+              <p>Setelah pembayaran penuh diterima:</p>
+              <ul>
+                <li>Hak kepemilikan hasil kerja berpindah kepada klien</li>
+                <li>Klien memiliki hak penggunaan penuh atas deliverable</li>
+                <li>
+                  Perusahaan mempertahankan hak untuk menggunakan karya dalam
+                  portfolio
+                </li>
+              </ul>
+
+              <h5>Hak Perusahaan</h5>
+              <ul>
+                <li>
+                  Framework, tools, dan metodologi tetap menjadi hak milik
+                  perusahaan
+                </li>
+                <li>
+                  Kode atau komponen yang dapat digunakan kembali adalah milik
+                  perusahaan
+                </li>
+                <li>
+                  Perusahaan dapat menggunakan pengetahuan umum yang diperoleh
+                </li>
+              </ul>
+
+              <h5>Lisensi Pihak Ketiga</h5>
+              <p>
+                Klien bertanggung jawab atas biaya lisensi software atau layanan
+                pihak ketiga yang digunakan dalam proyek.
+              </p>
+            </div>
+
+            <div class="terms-card" id="confidentiality">
+              <h3><i class="bi bi-lock me-2"></i>Kerahasiaan</h3>
+              <p>Kedua belah pihak setuju untuk:</p>
+              <ul>
+                <li>Menjaga kerahasiaan informasi rahasia yang dibagikan</li>
+                <li>
+                  Menggunakan informasi hanya untuk tujuan yang disepakati
+                </li>
+                <li>
+                  Tidak mengungkapkan informasi kepada pihak ketiga tanpa
+                  persetujuan
+                </li>
+                <li>
+                  Mengembalikan atau menghapus informasi rahasia setelah proyek
+                  selesai
+                </li>
+              </ul>
+              <p class="mt-3">
+                <strong>Non-Disclosure Agreement (NDA)</strong> terpisah dapat
+                ditandatangani untuk proyek sensitif.
+              </p>
+            </div>
+
+            <div class="terms-card" id="liability">
+              <h3>
+                <i class="bi bi-shield-exclamation me-2"></i>Batasan Tanggung
+                Jawab
+              </h3>
+
+              <h5>Jaminan Layanan</h5>
+              <p>Kami menjamin bahwa:</p>
+              <ul>
+                <li>
+                  Layanan akan dilakukan dengan profesional dan standar industri
+                </li>
+                <li>
+                  Deliverable akan sesuai dengan spesifikasi yang disepakati
+                </li>
+                <li>Bug dan error akan diperbaiki dalam periode garansi</li>
+              </ul>
+
+              <h5>Pengecualian</h5>
+              <p>Perusahaan tidak bertanggung jawab atas:</p>
+              <ul>
+                <li>Kerugian tidak langsung, insidental, atau konsekuensial</li>
+                <li>Kehilangan data karena kesalahan pengguna</li>
+                <li>Gangguan layanan karena force majeure</li>
+                <li>Masalah yang disebabkan oleh modifikasi tidak resmi</li>
+                <li>Kerusakan akibat penggunaan yang tidak sesuai</li>
+              </ul>
+
+              <h5>Batas Tanggung Jawab</h5>
+              <p>
+                Tanggung jawab maksimal perusahaan terbatas pada nilai total
+                yang dibayarkan klien untuk layanan terkait.
+              </p>
+            </div>
+
+            <div class="terms-card" id="termination">
+              <h3><i class="bi bi-x-circle me-2"></i>Pemutusan Layanan</h3>
+
+              <h5>Pemutusan oleh Klien</h5>
+              <p>Klien dapat memutuskan layanan dengan:</p>
+              <ul>
+                <li>Memberikan pemberitahuan tertulis 30 hari sebelumnya</li>
+                <li>Menyelesaikan semua pembayaran yang belum dibayar</li>
+                <li>Membayar biaya pemutusan jika ada</li>
+              </ul>
+
+              <h5>Pemutusan oleh Perusahaan</h5>
+              <p>Kami dapat memutuskan layanan jika:</p>
+              <ul>
+                <li>Klien melanggar syarat dan ketentuan ini</li>
+                <li>Pembayaran tertunda lebih dari 30 hari</li>
+                <li>Klien terlibat dalam aktivitas ilegal</li>
+                <li>
+                  Kerja sama tidak dapat dilanjutkan karena alasan yang sah
+                </li>
+              </ul>
+
+              <h5>Konsekuensi Pemutusan</h5>
+              <ul>
+                <li>Semua kewajiban pembayaran menjadi jatuh tempo</li>
+                <li>Akses ke layanan akan dihentikan</li>
+                <li>Data dapat dihapus setelah periode retensi</li>
+                <li>Lisensi yang diberikan akan dicabut</li>
+              </ul>
+            </div>
+
+            <div class="terms-card" id="disputes">
+              <h3><i class="bi bi-gavel me-2"></i>Penyelesaian Sengketa</h3>
+
+              <h5>Hukum yang Berlaku</h5>
+              <p>
+                Syarat ini diatur dan ditafsirkan sesuai dengan hukum Republik
+                Indonesia.
+              </p>
+
+              <h5>Mediasi</h5>
+              <p>Setiap perselisihan akan diselesaikan melalui:</p>
+              <ul>
+                <li>
+                  <strong>Negosiasi:</strong> Upaya penyelesaian secara
+                  musyawarah
+                </li>
+                <li>
+                  <strong>Mediasi:</strong> Melibatkan mediator independen
+                </li>
+                <li>
+                  <strong>Arbitrase:</strong> Melalui Badan Arbitrase Nasional
+                  Indonesia (BANI)
+                </li>
+              </ul>
+
+              <h5>Yurisdiksi</h5>
+              <p>
+                Jika penyelesaian di luar pengadilan tidak berhasil, sengketa
+                akan diselesaikan di Pengadilan Negeri Semarang, Indonesia.
+              </p>
+            </div>
+
+            <div class="terms-card" id="changes">
+              <h3>
+                <i class="bi bi-arrow-repeat me-2"></i>Perubahan Syarat dan
+                Ketentuan
+              </h3>
+              <p>
+                Kami berhak untuk mengubah atau memodifikasi Syarat dan
+                Ketentuan ini kapan saja. Perubahan akan:
+              </p>
+              <ul>
+                <li>Dipublikasikan di website kami</li>
+                <li>Diberitahukan melalui email kepada klien aktif</li>
+                <li>Berlaku efektif 30 hari setelah pemberitahuan</li>
+              </ul>
+              <p class="mt-3">
+                Penggunaan layanan yang berkelanjutan setelah perubahan dianggap
+                sebagai penerimaan syarat yang diperbarui.
+              </p>
+            </div>
+
+            <div class="terms-card">
+              <h3><i class="bi bi-envelope me-2"></i>Kontak</h3>
+              <p>Untuk pertanyaan tentang Syarat dan Ketentuan ini:</p>
+              <div class="row mt-4">
+                <div class="col-md-6">
+                  <p>
+                    <i class="bi bi-building text-primary me-2"></i
+                    ><strong> Nexora Digital</strong>
+                  </p>
+                  <p>
+                    <i class="bi bi-geo-alt text-primary me-2"></i>Kendal,
+                    Jawa Tengah, Indonesia
+                  </p>
+                </div>
+                <div class="col-md-6">
+                  <p>
+                    <i class="bi bi-envelope text-primary me-2"></i
+                    >bagussetyob809@gmail.com
+                  </p>
+                  <p>
+                    <i class="bi bi-telephone text-primary me-2"></i>+62
+                    895-0709-4710
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="text-center">
+      <div class="container">
+        <p class="mb-0">© 2025 PT Nexora Digital — All Rights Reserved.</p>
+      </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+  </body>
+</html>
